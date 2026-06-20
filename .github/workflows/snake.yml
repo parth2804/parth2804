@@ -5,36 +5,42 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  snake:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Generate snake game
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate snake animation
         uses: Platane/snk@main
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: parth2804
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake.dark.svg?palette=github-dark
           outputs_dir: dist/
-      
-      - name: Push to output branch
-        uses: actions/upload-artifact@v3
-        with:
-          name: snake-game
-          path: dist/
-      
-      - name: Commit and push
+
+      - name: Push snake SVG to output branch
         run: |
           mkdir -p output
           cp dist/github-contribution-grid-snake.svg output/snake.svg
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add output/snake.svg
-          git commit -m "Generate snake animation" || echo "No changes to commit"
-          git push || echo "Nothing to push"
+          git commit -m "🐍 Generate snake animation" || true
+          git push
+
+      - name: Push snake dark SVG
+        run: |
+          mkdir -p output
+          cp dist/github-contribution-grid-snake.dark.svg output/snake-dark.svg
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add output/snake-dark.svg
+          git commit -m "🐍 Generate dark snake animation" || true
+          git push || true

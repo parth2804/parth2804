@@ -60,7 +60,7 @@
 
 ## 🐍 Contribution Snake
 <p align="center">
- <img src="https://raw.githubusercontent.com/parth2804/parth2804/output/snake.svg" alt="Snake animation" />
+ <img src="https://raw.githubusercontent.com/parth2804/parth2804/main/output/snake.svg" alt="Snake animation" />
 </p>
 
 ---

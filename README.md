@@ -1,16 +1,38 @@
-## Hi there 👋
+# Hi, I'm Parth 👋
 
-<!--
-**parth2804/parth2804** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 Student  
+💻 Learning C, Python, Git and GitHub  
+🛠 Building beginner projects and coding practice programs  
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## About Me
+- I’m currently learning **C and Python**
+- I’m practicing coding problems and small projects
+- I’m improving my Git and GitHub skills
+- I want to build better projects and improve problem solving
+
+---
+
+## Tech Stack
+- C
+- Python
+- Git
+- GitHub
+- VS Code
+
+---
+
+## Current Work
+- C programming practice
+- Python mini projects
+- Summer assignment coding questions
+- Improving project structure and README writing
+
+---
+
+## Goals
+- Build more projects
+- Improve programming fundamentals
+- Learn DSA
+- Make my GitHub profile and repositories better
